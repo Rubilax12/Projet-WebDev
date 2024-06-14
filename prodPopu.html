@@ -1,0 +1,38 @@
+<!--Est intégré par index.html-->
+<main>
+    <!-- Bannière de promotion -->
+    <section class="banner">
+        <img src="{{ url_for('static', filename='img/sebbanniere.png') }}" alt="Bannière promotionnelle">
+        <h2>Bienvenue sur S-crewkie</h2>
+        <p>C'est parti mon cookie!</p>
+    </section>
+
+    <!-- Section de présentation des produits populaires -->
+    <section class="products">
+        <h2>Nos Produits Populaires</h2>
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/cookieCarton.png') }}" alt="Produit 1">
+            <h3>Livraison Cookies</h3>
+            <p>Livraison d'un kilogramme de cookies fait maison.</p>
+            <button>Acheter</button> <!--Ajouter REDIRECTION-->
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/bocalVerre.png') }}" alt="Produit 2">
+            <h3>Dégustation Cookies</h3>
+            <p>Stand dégustation des nouveautés cookies.</p>
+            <button>Acheter</button><!--Ajouter REDIRECTION-->
+        </div>
+        <!-- Pour la page d'accueil seulement 2 produits (populaires) -->
+    </section>
+</main>
+
+<footer>
+    <!-- Pied de page avec des liens supplémentaires et les informations de contact -->
+    <nav>
+        <ul>
+            <li><a href="cgu">Politique de confidentialité</a></li>
+            <li><a href="{{ url_for('static', filename='img/HipsterEgg.jpg') }}">Conditions d'utilisation</a></li>
+        </ul>
+    </nav>
+    <p>Contactez-nous: contact@screwkie.com</p>
+</footer>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de notre boutique</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/Apropos.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/sebcookie.png') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- Logo et titre du site + bandeau navigation-->
+        {% include 'navigation.html' %}
+    </header>
+    
+    <main>
+        <h1>Histoire de notre boutique</h1><br>
+        <section>
+            <h2>Avril 2024 : Lancement de notre entreprise avec son site web (local)</h2>
+            <h2>Début Juin 2024 : Réalisation du site web (routes) sous Flask</h2>
+            <h2>Mi Juin 2024 : Relier le site à la database pour les admins & clients</h2>
+            <p>Vous pouvez visiter notre site web <a href="index">ici</a></p>
+            <img src="{{ url_for('static', filename='img/cookiehistoire.jpg') }}" alt="Cookie Histoire" style="width: 50%;">
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 S-crewkie. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

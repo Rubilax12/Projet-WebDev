@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez l'administrateur</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body>
+    <header>
+        <!-- Logo et titre du site + bandeau navigation-->
+        {% include 'navigation.html' %}
+    </header>
+    
+    <main>
+        <h1>Contacter l'administrateur</h1><br>
+        <section class="contact">
+            <form action="envoyer_message.php" method="post"><!--Changer Action-->
+                <label class="contactNom" for="nom">Nom :</label>
+                <input  type="text" id="nom" name="nom" required><br><br>
+                
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="10" required></textarea><br><br>
+                
+                <button type="submit">Envoyer</button><!--REDIRECTION-->
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 S-crewkie. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
