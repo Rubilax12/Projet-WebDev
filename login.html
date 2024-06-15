@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<header>
+    <!-- Logo et titre du site -->
+    <h1><img src="sebcookie.png" alt="Logo S-crewkie">
+        <a href="index.html">S-crewkie</a>
+    </h1>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="login.html">Connexion</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="a propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+<div class="containerLogin">
+  <form action="/login" method="post">
+    <h2>Login</h2>
+    <div class="inputLogin">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="inputLogin">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required onfocus="t">
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+</body>
+</html>

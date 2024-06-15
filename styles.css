@@ -1,0 +1,190 @@
+/* Page index*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Couleur de fond générale */
+    color: #ffa500; /* Couleur du texte générale */
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #000; /* Couleur de fond de l'en-tête */
+    padding: 20px;
+    color: #ffffff; /* Couleur du texte de l'en-tête */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    
+}
+header h1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+header h1 a {
+    text-decoration: none;
+    color: #fff; /* Couleur du texte du titre */
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur des liens de navigation */
+}
+
+/* Styles du contenu principal */
+.banner {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.products {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    background-color: #000000; /* Couleur de fond des produits */
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product button {
+    background-color: #f60; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #ff8500; /* Couleur de fond du bouton au survol */
+}
+
+/* Styles du pied de page */
+footer {
+    background-color: #000; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte du pied de page */
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #fff; /* Couleur des liens du pied de page */
+}
+
+
+
+
+/*Page Login*/
+.containerLogin {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffa500; /* orange */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color : #000000; /* noir */
+  }
+
+  
+  .inputLogin {
+    padding: 20px;
+  }
+  
+  .inputLogin label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .inputLogin input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .containerLogin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000; /* noir */
+    color: #ffffff; /* blanc */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  /*Page contact*/
+  textarea {
+    margin-left: 11%;
+    width: 60%;
+    min-height: 100px; /* Hauteur minimale du textarea */
+}
+ .contact .contactNom{
+    margin-right: 73px;
+ }
+
+  .products{
+    display: inline-flex;
+  }

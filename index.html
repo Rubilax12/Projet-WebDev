@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
@@ -31,4 +32,69 @@
     {% include 'infobox.html' %}
         
     </body>
+=======
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-crewkie - Accueil</title>
+    <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo et titre du site -->
+        <h1><img src="sebcookie.png" alt="Logo S-crewkie">
+            <a href="index.html">S-crewkie</a>
+        </h1>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="a propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bannière de promotion ou image principale -->
+        <section class="banner">
+            <img src="sebbanniere.png" alt="Bannière promotionnelle">
+            <h2>Bienvenue sur S-crewkie</h2>
+            <p>C'est parti mon cookie!</p>
+        </section>
+
+        <!-- Section de présentation des produits populaires -->
+        <section class="products">
+            <h2>Nos Produits Populaires</h2>
+            <div class="product">
+                <img src="cookieCarton.png" alt="Produit 1">
+                <h3>Livraison Cookies</h3>
+                <p>Livraison d'un kilograme de cookies fait maison.</p>
+                <button>Acheter</button>
+            </div>
+            <div class="product">
+                <img src="bocalVerre.png" alt="Produit 2">
+                <h3>Dégustation Cookies</h3>
+                <p>Stand dégustation des nouveautés cookies.</p>
+                <button>Acheter</button>
+            </div>
+            <!-- Ajoutez plus de produits ici si nécessaire -->
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page avec des liens supplémentaires et les informations de contact -->
+        <nav>
+            <ul>
+                <li><a href="HipsterEgg.jpg">Politique de confidentialité</a></li>
+                <li><a href="Hispter Egg.html">Conditions d'utilisation</a></li>
+            </ul>
+        </nav>
+        <p>Contactez-nous: contact@screwkie.com</p>
+    </footer>
+</body>
+
 </html>
