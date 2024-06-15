@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/sebcookie.png') }}" type="image/x-icon">
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+        <script refer src="{{ url_for('static', filename='js/accueil.js') }}"></script>
+        <title>Connexion</title>
+    </head>
+<header>
+    {% include 'navigation.html' %}
+</header>
+
+  <div class="login-page">
+    <div class="form">
+        <form name="myForm" id="form_id" method='post'>
+            <input type="text" name="username" placeholder="Username" required/>
+            <input type="password" name="password" placeholder="Password" required/>
+            <input type="button" value="SIGN IN" onclick="signin()"/>
+            <input type="button" value="REGISTER" onclick="register()"/>
+        </form>
+    </div>
+  </div>
+</html>
+
+
+ 
