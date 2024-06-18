@@ -1,0 +1,244 @@
+.login-page {
+    width: 360px;
+    padding: 100px;
+    margin: auto;
+}
+
+.form {
+    background: #FFFFFF;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input[type=text], input[type=password] {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form input[type=button] {
+    outline: 0;
+    background: #4CAF50;
+    width: 49%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input[type=button]:hover {
+    background: #43A047;
+}
+
+#info {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 200px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 10px 13px rgba(0,0,0,0.12), 0 10px 12px rgba(0,0,0,0.24);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+#info.displayed {
+    visibility: visible;
+    opacity: 1;
+} 
+
+#warning {
+    position: absolute;
+    width: 100%;
+    background: #81ff5c;
+} 
+
+#warning p {
+    font-family: "Lucida Console", monospace;
+    font-weight: bold;
+    color: #0f6000;
+} 
+
+#info span {
+    position: absolute;
+    margin: auto;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 20px;
+    border-radius: 3px;
+    color:#7c7c7c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+} 
+
+.closeBox {
+    position: absolute;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #5ed166;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    border: 0px;
+    right: 0px;
+    top: 0px;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+} 
+
+.closeBox:hover {
+    background: #00c700;
+    text-decoration: none;
+    border: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.task {
+  position: relative;
+  margin: 16px;
+  background: #dddddd;
+  width: 200px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow:
+    inset 0 5px white,
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7,
+    0px 6px 50px -13px rgba(0,0,0,0.83);
+}
+
+.taskTitle {
+  margin-left: 20%;
+  text-align: center;
+  font-family: "Lucida Console", monospace;
+  font-weight: bold;
+  color: #646464;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.taskID {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 40px;
+  background: #5ed166;
+  text-align: center;
+  border-top-left-radius: 30%;
+  color: white;
+  box-shadow:
+    inset 0 5px #a9ffb6,
+    inset 5px 0 #8be27b;
+}
+
+.taskID p {
+  margin-top: 20%;
+  font-family: "Lucida Console", monospace;
+  font-size: 20px;
+}
+
+.information {
+  font-family: "Arial", monospace;
+  font-weight: bolder;
+  margin-left: 10px;
+  color : #505050;
+  line-height: 100%;
+}
+
+.action {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 300px;  
+}
+
+.action button {
+  margin-top: auto;
+  width: 50%;
+  height: 40px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #5ed166;
+  text-decoration: none;
+  border: 0px;
+  cursor: pointer;
+}
+
+.modify {
+  border-bottom-left-radius: 20%;
+  box-shadow:
+    inset 0 -5px #00c12d,
+    inset 5px 0 #8be27b;
+}
+
+.delete {
+  border-bottom-right-radius: 20%;
+  box-shadow:
+    inset 0 -5px #00c12d,
+    inset -5px 0 #8be27b;
+}
+
+.action button:hover {
+  background: #00c700;
+  text-decoration: none;
+  border: 0px;
+}
+
+#myHeader {
+  position: fixed;
+  background: #56e25b;
+  width: 100%;
+  top: 0%;
+}
+
+#myHeader p {
+  color: white;
+  font-family: "Lucida Console", monospace;
+  width: 50%;
+  margin-left: 3%;
+}
+
+.signOut {
+  position: absolute;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #5ed166;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  border: 0px;
+  right: 0px;
+  top: 0px;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+} 
+
+.signOut:hover {
+  background: #00c700;
+  text-decoration: none;
+  border: 0px;
+}
