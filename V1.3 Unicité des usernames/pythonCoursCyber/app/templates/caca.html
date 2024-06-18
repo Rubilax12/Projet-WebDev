@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CACA</title>
+</head>
+<body>
+    
+    {% if user_data == None %}
+        <h1>Il faudrait penser à se connecter avant de vouloir accéder au mode admin.</h1>
+    {% else %}
+        <h1>Il semblerait que vous n'ayez pas les droits vous n'êtes que: {{ user_data.username }}</h1>
+    {% endif %}
+</body>
+</html>
