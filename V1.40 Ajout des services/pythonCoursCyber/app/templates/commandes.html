@@ -1,0 +1,24 @@
+{% if user_data == none %}
+    <p>Vous devez être connecté pour accéder à cette page.</p>
+{% else %}
+    <h1>Mes commandes</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Produit</th>
+        <th>Quantité</th>
+        <th>Prix total</th>
+      </tr>
+    {% for commande in commandes %}
+      <tr>
+        <td>{{ commande.id }}</td>
+        <td>{{ commande.date }}</td>
+        <td>{{ commande.produit }}</td>
+        <td>{{ commande.quantite }}</td>
+        <td>{{ commande.prix_total }}</td>
+      </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+

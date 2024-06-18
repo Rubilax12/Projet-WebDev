@@ -1,0 +1,32 @@
+<!-- Logo et titre du site + bandeau navigation-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='img/sebcookie.png') }}" type="image/x-icon">
+
+<div id="titrelogo">
+    <h1><img src="{{ url_for('static', filename='img/sebcookie.png') }}" alt="Logo S-crewkie">
+        <a href="/">S-crewkie</a>
+    </h1>
+</div>
+<!--Test-->
+
+<div id="navigation">
+    <nav>
+        <ul>
+            
+            <li><a href="produits" alt="produits">Produits</a></li>
+            <li><a href="Apropos" alt="a propos">À propos</a></li>
+            <li><a href="contact" alt="contacts">Contact</a></li>
+            {% if user_data %}
+            <!-- Afficher ces liens si l'utilisateur est connecté -->
+                <title>{{user_data.username}} - S-crewkie</title>
+                <li><a href="profil" alt="profil">Profil de {{ user_data.username }}</a></li>
+                <li><a href="task" alt="tâches">Tâches</a></li>
+                <li><a href="devis">Devis</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="commandes">Commandes</a></li>
+                
+
+            {% endif %}
+        </ul>
+    </nav>
+</div>
