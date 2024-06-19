@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Profil</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profil.css') }}">
+</head>
+<body>
+
+    <header>
+        {% include 'navigation.html' %}
+    </header>
+
+    <div class="banner">
+        <h2>Bienvenue sur votre profil, {{ user_data.username }} !</h2>
+        <p>C'est ici que vous pouvez voir et mettre à jour vos informations personnelles.</p>
+    </div>
+
+    <div class="profile-info">
+        <h3>Informations Personnelles</h3>
+        <p><strong>Nom d'utilisateur :</strong> {{ user_data['username'] }}</p>
+        <p><strong>Email :</strong> {{ user_data['email'] }}</p>
+        <p><strong>Biographie :</strong> {{ user_data['bio'] }}</p>
+    </div>
+
+    <div class="contact-form">
+        <h3>Mettre à jour les informations</h3>
+        <form method="POST" action="/update_profile">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" name="username" value="{{ user_data['username'] }}" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" value="{{ user_data['email'] }}" required>
+            
+            <label for="bio">Biographie :</label>
+            <textarea id="bio" name="bio" rows="5">{{ user_data['bio'] }}</textarea>
+            
+            <button type="submit">Mettre à jour</button>
+        </form>
+</html>

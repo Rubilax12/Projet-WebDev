@@ -1,0 +1,53 @@
+/* Styles pour le titre et le logo */
+#titrelogo {
+    background-color: #cf8d0b;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#titrelogo h1 {
+    margin: 0;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+#titrelogo h1 img {
+    height: 30px; /* Ajuster la taille du logo */
+    margin-right: 10px;
+}
+
+#titrelogo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles pour la barre de navigation */
+#navigation {
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 10px 0;
+}
+
+#navigation nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#navigation nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navigation nav ul li a {
+    color: #333; /* Couleur du texte */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#navigation nav ul li a:hover {
+    color: #007bff; /* Couleur du texte au survol */
+}

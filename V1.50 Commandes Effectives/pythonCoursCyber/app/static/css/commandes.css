@@ -1,0 +1,62 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+/* Styles pour la table des commandes */
+.commandes-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.commandes-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.commandes-table thead th {
+    padding: 15px;
+    text-align: left;
+    min-width: 150px; /* Largeur minimale des colonnes d'en-tête */
+}
+
+.commandes-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.commandes-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.commandes-table tbody td {
+    padding: 15px; /* Ajout de padding pour plus d'espace */
+    text-align: left;
+    min-width: 150px; /* Largeur minimale des colonnes */
+}
+
+.commandes-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styles pour les messages */
+.message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
