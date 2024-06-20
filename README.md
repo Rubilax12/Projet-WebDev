@@ -78,5 +78,11 @@ Améliorations à Apporter
     Pouvoir éditer le profil dans /profil
     Pouvoir envoyer un message dans /contact
 
+    Recommandations: 
+    Pages privées
+    Hash des données
+    Avertir avant de supprimer une commande
+    Gèrer le rafraichissement du login.
+
 
 
