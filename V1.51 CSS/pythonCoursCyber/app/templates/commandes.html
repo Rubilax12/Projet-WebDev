@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/commandes.css') }}">
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% if user_data is none %}
+    <p>Vous devez être connecté pour accéder à cette page.</p>
+{% else %}
+<header>
+  {% include 'navigation.html' %}
+</header>
+    <h1>Mes commandes</h1>
+    {% if id|length == 0 %}
+        <p>Vous n'avez aucune commande.</p>
+    {% else %}
+    <h4>
+        <form method="post">
+            <label for="Utilisateur"></label>
+            <input type="text" name="Utilisateur" id="Utilisateur" placeholder="Utilisateur">
+
+            <label for="Devis"></label>
+            <input type="text" name="Devis" id="Devis" placeholder="Devis">
+
+            <label for="Services"></label>
+            <input type="text" name="Services" id="Services" placeholder="Services">
+
+            <label for="Prix"></label>
+            <input type="text" name="Prix" id="Prix" placeholder="Prix">
+
+
+            <input type="button" id="bulbizarre" value="Ajout" onclick="ajouterCommande()"/>Ajouter</h4>
+        </form>
+        <form method="post">  
+
+            <div>
+                <h4>
+                <label for="id"></label>
+                <input type="text" name="id" id="id" placeholder="ID">
+                
+                    <input type="button" placeholder="SUPPRESSION" value="Suppression" onclick="supprimerCommande(document.getElementById('id').value)">Supprimer</input>
+                </h4>
+            </div>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Utilisateur concerné</th>
+                    <th>Services concerné</th>
+                    <th>Devis</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(id|length) %}
+                    <tr>
+                        <td>{{ id[i] }}</td>
+                        <td>{{ user_id[i] }}</td>
+                        <td>{{ services_id[i] }}</td>
+                        <td>{{ devis[i] }}</td>
+                        <td>{{ prix[i] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endif %}
+</html>
