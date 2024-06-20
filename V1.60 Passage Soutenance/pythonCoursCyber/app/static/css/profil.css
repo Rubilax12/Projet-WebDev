@@ -1,0 +1,76 @@
+/* Réinitialisation des marges et de la police de caractères */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du header */
+header {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style de la bannière */
+.banner {
+    background-color: #e67e22; /* Orange plus foncé */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner h2 {
+    margin-top: 0;
+}
+
+/* Style des sections de profil */
+.profile-info, .contact-form {
+    background-color: #fff;
+    border: 1px solid #f39c12; /* Orange */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info h3, .contact-form h3 {
+    color: #f39c12; /* Orange */
+    margin-top: 0;
+}
+
+.profile-info p, .contact-form label {
+    margin-bottom: 10px;
+}
+
+/* Style des formulaires */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #f39c12; /* Orange */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #f39c12; /* Orange */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22; /* Orange plus foncé au survol */
+}

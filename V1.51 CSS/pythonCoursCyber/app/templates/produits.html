@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Produits</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/produits.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/sebcookie.png') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- Logo et titre du site + bandeau navigation-->
+        {% include 'navigation.html' %}
+    </header>
+    
+    <h2>Tous nos produits: </h2>
+    <section class="products">
+        
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/cookieCarton.png') }}" alt="Produit 1 (Carton)">
+            <h3>Livraison de Cookies</h3>
+            <p>Livraison d'un kilogramme de cookies fait maison.</p>
+            
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/bocalVerre.png') }}" alt="Produit 2 (Bocal Verre)">
+            <h3>Dégustation de Cookies</h3>
+            <p>Stand dégustation des nouveautés cookies.</p>
+            
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/CookieChien.png') }}" alt="Produit 3 (Cookie chien)">
+            <h3>Cookies pour animaux</h3>
+            <p>Le cookie que vos animaux adorent.</p>
+            
+        </div>
+        <div class="product">
+            <img src="{{ url_for('static', filename='img/cookiedOR.png') }}" alt="Produit 4 (Cookie d'or)">
+            <h3>Cookie en Or</h3>
+            <p>Le cookie que vous allez adorer.</p>
+            
+        </div>
+
+    </section>
+</body>
+</html>

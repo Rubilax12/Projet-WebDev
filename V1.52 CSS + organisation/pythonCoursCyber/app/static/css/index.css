@@ -1,0 +1,174 @@
+/* Style pour le corps de la page avec animation de fond */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #000000, #1a1a1a, #333333, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #ffa500; /* Couleur du texte générale */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Style pour le header */
+header {
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #ffa500;
+}
+
+header h1 img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 2em;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+  color: #ffffff;
+}
+
+/* Style pour la bannière */
+.banner {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner h2 {
+  color: #ffa500;
+  margin: 20px 0 10px 0;
+  font-size: 2em;
+}
+
+.banner p {
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+/* Style pour la section des produits */
+.products {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.products h2 {
+  color: #ffa500;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.products .product {
+  display: inline-block;
+  background-color: #333333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  vertical-align: top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.products .product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.products .product h3 {
+  color: #ffa500;
+  margin: 15px 0 10px 0;
+}
+
+.products .product p {
+  color: #ffffff;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.products .product button {
+  background: #ffa500;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.products .product button:hover {
+  background: #e69500;
+}
+
+/* Style pour le footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffa500;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+footer nav ul li {
+  margin: 0 15px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #ffa500;
+  font-size: 1em;
+}
+
+footer nav ul li a:hover {
+  color: #ffffff;
+}
