@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/services.css') }}">
+    <title>Services</title>
+</head>
+<body>
+    
+{% if user_data is none %}
+    <p>Vous devez être connecté pour accéder à cette page.</p>
+{% else %}
+<header>
+    {% include 'navigation.html' %}
+</header>
+    <h1>Services disponibles: </h1>
+    
+        <ul>
+            {% for i in range(id|length) %}
+                <li>
+                    <h2>{{ nom[i] }}</h2>
+                    <img src="{{ images[i]}}" alt="{{ nom[i] }}">
+                    <p>Prix: {{ prix[i] }} €</p>
+                </li>
+            {% endfor %}
+        </ul>
+{% endif %}
+        
+    
+</body>
+</html>
