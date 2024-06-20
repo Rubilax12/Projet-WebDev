@@ -82,7 +82,8 @@ Améliorations à Apporter
     Pages privées
     Hash des données
     Avertir avant de supprimer une commande
-    Gèrer le rafraichissement du login.
+    Gèrer le rafraichissement du login
+    Créer des classes
 
 
 
