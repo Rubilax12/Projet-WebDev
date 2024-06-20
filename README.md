@@ -2,32 +2,32 @@ Fonctionnement technique du site:
 
 Architecture du projet:
 
-my_flask_app/
-├── app/
-│   ├── __init__.py (Lance l'app Flask et initialise la session)
-│   ├── controller.py (Gestion des contrôleurs, actuellement peu utilisé)
-│   ├── views.py (Gestion des vues)
-│   ├── models.py (Interaction avec la base de données)
-│   ├── templates/ (Pages HTML)
-│   │   ├── index.html (Page d'accueil)
-│   │   ├── Apropos.html (Page informatique sur le site)
-│   │   ├── contact.html (Page de contact permettant d'envoyer un message à l'admin du site ) (20/06 => envoi non fonctionnel)
-│   │   ├── login.html (Page de connexion)
-│   │   ├── devis.html (gère les devis en fonction du compte connecté) (20/06=> non fonctionnel)
-│   │   ├── profile.html (Page de profil utilisateur)
-│   │   ├── commandes.html (Page des commandes gérée par la base de données)
-│   │   ├── navigation.html (Header de toutes les pages)
-│   │   ├── services.html montre les services disponibles directement depuis la BDD 
-│   ├── static/ (Fichiers statiques)
-│   │   ├── css/ (Feuilles de style pour chaque page)
-│   │   ├── 
-│   │   ├── js/ (Scripts JavaScript)
-│   │   │   ├── jquery.js (Bibliothèque jQuery)
-│   │   │   ├── index.js (Contient toutes les fonctions JavaScript)
-│   │   ├── img/ (Images utilisées sur le site, en formats PNG & JPG)
-├── config.py (Définit les variables d'environnement)
-├── run.py (Lance le site sur localhost avec le port 5000)
-└── README.md (Ce fichier)
+my_flask_app/                                                                            
+├── app/                                                                            
+│   ├── __init__.py (Lance l'app Flask et initialise la session)                                                            
+│   ├── controller.py (Gestion des contrôleurs, actuellement peu utilisé)                                                        
+│   ├── views.py (Gestion des vues)                                                                                
+│   ├── models.py (Interaction avec la base de données)                                                
+│   ├── templates/ (Pages HTML)                                                        
+│   │   ├── index.html (Page d'accueil)                                                                
+│   │   ├── Apropos.html (Page informatique sur le site)                                                                    
+│   │   ├── contact.html (Page de contact permettant d'envoyer un message à l'admin du site ) (20/06 => envoi non fonctionnel)                                                                    
+│   │   ├── login.html (Page de connexion)                                                        
+│   │   ├── devis.html (gère les devis en fonction du compte connecté) (20/06=> non fonctionnel)                                                    
+│   │   ├── profile.html (Page de profil utilisateur)                                                        
+│   │   ├── commandes.html (Page des commandes gérée par la base de données)                                                            
+│   │   ├── navigation.html (Header de toutes les pages)                                                                            
+│   │   ├── services.html montre les services disponibles directement depuis la BDD                                                                                                     
+│   ├── static/ (Fichiers statiques)                                                                                
+│   │   ├── css/ (Feuilles de style pour chaque page)                                                                                                                                        
+│   │   ├──                                                                                                     
+│   │   ├── js/ (Scripts JavaScript)                                                                            
+│   │   │   ├── jquery.js (Bibliothèque jQuery)                                                                                        
+│   │   │   ├── index.js (Contient toutes les fonctions JavaScript)                                                                                                
+│   │   ├── img/ (Images utilisées sur le site, en formats PNG & JPG)                                                        
+├── config.py (Définit les variables d'environnement)                                                        
+├── run.py (Lance le site sur localhost avec le port 5000)                                            
+└── README.md (Ce fichier)                                                                        
 
 
 Fonctionnement du site
